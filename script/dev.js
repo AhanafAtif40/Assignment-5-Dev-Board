@@ -27,3 +27,30 @@ document.getElementById('clear-history').addEventListener('click',
         historyList.innerText = '';
 
     });
+// 1st active history js
+const outputHeading = document.getElementById('active-text');
+document.getElementById('card-btn').addEventListener('click',
+    function (event) {
+        event.preventDefault();
+        const newTime = new Date().toLocaleTimeString();
+        const cardHeading = document.getElementById('1stCardHeading').innerText;
+        outputHeading.innerHTML = `
+        <div class="bg-[#F4F7FF] p-4 rounded-lg mx-2"> You have Complete The Task ${cardHeading} at ${newTime}</div>
+        `;
+        // task count section
+        const taskCount = document.getElementById('change-date').innerText;
+        const convertTaskCount = parseFloat(taskCount);
+        sum = convertTaskCount - 1;
+        document.getElementById('change-date').innerText = sum;
+        // navCount section
+        const navCount = document.getElementById('change-number').innerText;
+        const convertnavCount = parseFloat(navCount);
+        navSum = convertnavCount + 1;
+        document.getElementById('change-number').innerText = navSum;
+
+        this.setAttribute("disabled", true);
+        this.classList.add("opacity-20",);
+
+        alert("Board Updated Succesfully");
+
+    });
