@@ -26,7 +26,7 @@ document.getElementById('clear-history').addEventListener('click',
         event.preventDefault();
         historyList.innerText = '';
 
-    });
+    }); 
 // 1st active history js
 const outputHeading = document.getElementById('active-text');
 document.getElementById('card-btn').addEventListener('click',

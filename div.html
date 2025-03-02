@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .font-popins {
+            font-family: "Poppins", serif;
+        }
+    </style>
+
+</head>
+
+<body class="bg-[#F4F7FF] font-popins mb-6">
+
+    <section class="pt-5 mx-10 ">
+        <div class="rounded-lg navbar bg-base-100">
+            <div class="flex-1">
+                <img class="w-10 h-auto" src="assets/logo.png" alt="">
+                <a class="gap-0 text-xl btn btn-ghost">Dev<span class="font-bold">Board</span></a>
+            </div>
+            <div>
+                <a id="backBtn" href="" class="text-white bg-blue-800 btn">Back to Desk</a>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5 mx-10">
+        <div class="flex items-center justify-center">
+            <h1 class="text-xl font-bold">Blogs</h1>
+        </div>
+        <div class="p-4 mt-10 bg-white rounded-lg">
+            <h1 class="font-semibold">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <h4 class="opacity-50">The way to select different element in the DOM is
+                [getElimentById(),getElementsByClassName(),querySelectorAll(),querySelector(),getElementsByTagName(),getElementsByName()]
+            </h4>
+        </div>
+        <div class="p-4 mt-5 bg-white rounded-lg">
+            <h1 class="font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </h1>
+            <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <h4 class="opacity-50">innerHTML = [Returns or sets the HTML content of the element.], innerText =
+                [innerText return just content of the elements], textContent = [innerContent Return all content of the
+                elements]</h4>
+        </div>
+        <div class="p-4 mt-5 bg-white rounded-lg">
+            <h1 class="font-semibold">Question-3: What is event delegation in the DOM?</h1>
+            <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <h4 class="opacity-50">Event delegation is a technique in the DOM where you add an event listener to the
+                parent element, but use it to handle events on child elements. This eliminates the need to add event
+                listeners to each child separately!</h4>
+        </div>
+        <div class="p-4 mt-5 bg-white rounded-lg">
+            <h1 class="font-semibold">Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <h4 class="opacity-50">Event bubbling is when an event occurs on a child element in the DOM, it flows
+                upwards. That is, the event flows from the bottom up (child - parent - grandparent - document).</h4>
+        </div>
+        <div class="p-4 mt-5 bg-white rounded-lg">
+            <h1 class="font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <hr class="border-t-2 border-dashed border-[#3751fd22] my-4">
+            <h4 class="opacity-50">New elements can be created using document.createElement(),appendChild(): Can be
+                added to the end of the parent element,removeChild(): Removes a child element from its parent.</h4>
+        </div>
+    </section>
+    <script src="script/back.js"></script>
+
+</body>
+
+</html>
